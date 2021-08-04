@@ -1,0 +1,212 @@
+2021-07-29 15:03:10.702  INFO 9536 --- [main] com.lrm.BlogApplication                  : Starting BlogApplication on BF-201909051808 with PID 9536 (started by Administrator in F:\资料与配套代码\资料与配套代码\源代码\Blog-完整功能源代码\blog)
+2021-07-29 15:03:10.706 DEBUG 9536 --- [main] com.lrm.BlogApplication                  : Running with Spring Boot v1.5.7.RELEASE, Spring v4.3.11.RELEASE
+2021-07-29 15:03:10.707  INFO 9536 --- [main] com.lrm.BlogApplication                  : The following profiles are active: dev
+2021-07-29 15:03:11.070  INFO 9536 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e54303: startup date [Thu Jul 29 15:03:11 CST 2021]; root of context hierarchy
+2021-07-29 15:03:13.456  INFO 9536 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8080 (http)
+2021-07-29 15:03:13.466  INFO 9536 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-29 15:03:13.467  INFO 9536 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.20
+2021-07-29 15:03:13.582  INFO 9536 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-07-29 15:03:13.583  INFO 9536 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2513 ms
+2021-07-29 15:03:13.759  INFO 9536 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-07-29 15:03:13.764  INFO 9536 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-07-29 15:03:13.765  INFO 9536 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-07-29 15:03:13.765  INFO 9536 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-07-29 15:03:13.766  INFO 9536 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-07-29 15:03:14.855  INFO 9536 --- [main] j.LocalContainerEntityManagerFactoryBean : Building JPA container EntityManagerFactory for persistence unit 'default'
+2021-07-29 15:03:14.870  INFO 9536 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-07-29 15:03:14.976  INFO 9536 --- [main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.0.12.Final}
+2021-07-29 15:03:14.979  INFO 9536 --- [main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-07-29 15:03:14.981  INFO 9536 --- [main] org.hibernate.cfg.Environment            : HHH000021: Bytecode provider name : javassist
+2021-07-29 15:03:15.033  INFO 9536 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2021-07-29 15:03:15.705  INFO 9536 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2021-07-29 15:03:16.317  INFO 9536 --- [main] org.hibernate.tool.hbm2ddl.SchemaUpdate  : HHH000228: Running hbm2ddl schema update
+2021-07-29 15:03:16.784  INFO 9536 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-29 15:03:17.068  INFO 9536 --- [main] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-07-29 15:03:17.875  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@e54303: startup date [Thu Jul 29 15:03:11 CST 2021]; root of context hierarchy
+2021-07-29 15:03:17.925  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/about],methods=[GET]}" onto public java.lang.String com.lrm.web.AboutShowController.about()
+2021-07-29 15:03:17.929  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/delete],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-07-29 15:03:17.930  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/search],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.BlogController.search(org.springframework.data.domain.Pageable,com.lrm.vo.BlogQuery,org.springframework.ui.Model)
+2021-07-29 15:03:17.930  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.input(org.springframework.ui.Model)
+2021-07-29 15:03:17.930  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.BlogController.post(com.lrm.po.Blog,org.springframework.web.servlet.mvc.support.RedirectAttributes,javax.servlet.http.HttpSession)
+2021-07-29 15:03:17.930  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs/{id}/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.editInput(java.lang.Long,org.springframework.ui.Model)
+2021-07-29 15:03:17.930  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/blogs],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.BlogController.blogs(org.springframework.data.domain.Pageable,com.lrm.vo.BlogQuery,org.springframework.ui.Model)
+2021-07-29 15:03:17.931  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/logout],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.LoginController.logout(javax.servlet.http.HttpSession)
+2021-07-29 15:03:17.931  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/login],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.LoginController.login(java.lang.String,java.lang.String,javax.servlet.http.HttpSession,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-07-29 15:03:17.932  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.LoginController.loginPage()
+2021-07-29 15:03:17.933  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/delete],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-07-29 15:03:17.933  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.input(org.springframework.ui.Model)
+2021-07-29 15:03:17.933  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.tags(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2021-07-29 15:03:17.934  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TagController.post(com.lrm.po.Tag,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-07-29 15:03:17.934  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TagController.editInput(java.lang.Long,org.springframework.ui.Model)
+2021-07-29 15:03:17.934  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/tags/{id}],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TagController.editPost(com.lrm.po.Tag,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-07-29 15:03:17.936  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/delete],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.delete(java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-07-29 15:03:17.936  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.types(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2021-07-29 15:03:17.936  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.input(org.springframework.ui.Model)
+2021-07-29 15:03:17.936  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TypeController.post(com.lrm.po.Type,org.springframework.validation.BindingResult,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-07-29 15:03:17.937  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}/input],methods=[GET]}" onto public java.lang.String com.lrm.web.admin.TypeController.editInput(java.lang.Long,org.springframework.ui.Model)
+2021-07-29 15:03:17.937  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/types/{id}],methods=[POST]}" onto public java.lang.String com.lrm.web.admin.TypeController.editPost(com.lrm.po.Type,org.springframework.validation.BindingResult,java.lang.Long,org.springframework.web.servlet.mvc.support.RedirectAttributes)
+2021-07-29 15:03:17.939  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/archives],methods=[GET]}" onto public java.lang.String com.lrm.web.ArchiveShowController.archives(org.springframework.ui.Model)
+2021-07-29 15:03:17.940  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments/{blogId}],methods=[GET]}" onto public java.lang.String com.lrm.web.CommentController.comments(java.lang.Long,org.springframework.ui.Model)
+2021-07-29 15:03:17.940  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/comments],methods=[POST]}" onto public java.lang.String com.lrm.web.CommentController.post(com.lrm.po.Comment,javax.servlet.http.HttpSession)
+2021-07-29 15:03:17.941  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.lrm.web.IndexController.index(org.springframework.data.domain.Pageable,org.springframework.ui.Model)
+2021-07-29 15:03:17.941  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/search],methods=[POST]}" onto public java.lang.String com.lrm.web.IndexController.search(org.springframework.data.domain.Pageable,java.lang.String,org.springframework.ui.Model)
+2021-07-29 15:03:17.941  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/blog/{id}],methods=[GET]}" onto public java.lang.String com.lrm.web.IndexController.blog(java.lang.Long,org.springframework.ui.Model)
+2021-07-29 15:03:17.941  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/footer/newblog],methods=[GET]}" onto public java.lang.String com.lrm.web.IndexController.newblogs(org.springframework.ui.Model)
+2021-07-29 15:03:17.942  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/{id}],methods=[GET]}" onto public java.lang.String com.lrm.web.TagShowController.tags(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2021-07-29 15:03:17.942  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/types/{id}],methods=[GET]}" onto public java.lang.String com.lrm.web.TypeShowController.types(org.springframework.data.domain.Pageable,java.lang.Long,org.springframework.ui.Model)
+2021-07-29 15:03:17.944  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-07-29 15:03:17.944  INFO 9536 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-07-29 15:03:17.985  INFO 9536 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-29 15:03:17.986  INFO 9536 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-29 15:03:17.998  INFO 9536 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in controllerExceptionHandler
+2021-07-29 15:03:18.015  INFO 9536 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-07-29 15:03:18.515  INFO 9536 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-07-29 15:03:18.564  INFO 9536 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8080 (http)
+2021-07-29 15:03:18.567  INFO 9536 --- [main] com.lrm.BlogApplication                  : Started BlogApplication in 8.794 seconds (JVM running for 10.221)
+2021-07-29 15:11:19.961  INFO 9536 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-07-29 15:11:19.961  INFO 9536 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-07-29 15:11:19.987  INFO 9536 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2021-07-29 15:11:20.037  INFO 9536 --- [http-nio-8080-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-07-29 15:11:20.238  WARN 9536 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [null.size]; use collection function syntax instead [size(null)].
+2021-07-29 15:11:20.306  WARN 9536 --- [http-nio-8080-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [null.size]; use collection function syntax instead [size(null)].
+2021-07-29 15:11:20.313  INFO 9536 --- [http-nio-8080-exec-1] com.lrm.aspect.LogAspect                 : Result : index
+2021-07-29 15:11:21.705  INFO 9536 --- [http-nio-8080-exec-9] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 15:11:21.715  INFO 9536 --- [http-nio-8080-exec-9] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 15:25:42.255  INFO 9536 --- [http-nio-8080-exec-3] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='127.0.0.1', classMethod='com.lrm.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-29 15:25:42.329  INFO 9536 --- [http-nio-8080-exec-3] com.lrm.aspect.LogAspect                 : Result : types
+2021-07-29 15:25:42.840  INFO 9536 --- [http-nio-8080-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 15:25:42.848  INFO 9536 --- [http-nio-8080-exec-7] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 15:25:43.864  INFO 9536 --- [http-nio-8080-exec-6] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='127.0.0.1', classMethod='com.lrm.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-29 15:25:43.931  INFO 9536 --- [http-nio-8080-exec-6] com.lrm.aspect.LogAspect                 : Result : tags
+2021-07-29 15:25:44.384  INFO 9536 --- [http-nio-8080-exec-2] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 15:25:44.390  INFO 9536 --- [http-nio-8080-exec-2] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 15:25:44.881  INFO 9536 --- [http-nio-8080-exec-8] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='127.0.0.1', classMethod='com.lrm.web.ArchiveShowController.archives', args=[{}]}
+2021-07-29 15:25:45.039  INFO 9536 --- [http-nio-8080-exec-8] com.lrm.aspect.LogAspect                 : Result : archives
+2021-07-29 15:25:45.481  INFO 9536 --- [http-nio-8080-exec-9] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 15:25:45.486  INFO 9536 --- [http-nio-8080-exec-9] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 15:25:45.703  INFO 9536 --- [http-nio-8080-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/about', ip='127.0.0.1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-07-29 15:25:45.706  INFO 9536 --- [http-nio-8080-exec-10] com.lrm.aspect.LogAspect                 : Result : about
+2021-07-29 15:25:46.165  INFO 9536 --- [http-nio-8080-exec-5] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 15:25:46.171  INFO 9536 --- [http-nio-8080-exec-5] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 15:25:46.765  INFO 9536 --- [http-nio-8080-exec-3] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='127.0.0.1', classMethod='com.lrm.web.ArchiveShowController.archives', args=[{}]}
+2021-07-29 15:25:46.778  INFO 9536 --- [http-nio-8080-exec-3] com.lrm.aspect.LogAspect                 : Result : archives
+2021-07-29 15:25:47.150  INFO 9536 --- [http-nio-8080-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 15:25:47.155  INFO 9536 --- [http-nio-8080-exec-7] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 15:25:47.551  INFO 9536 --- [http-nio-8080-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='127.0.0.1', classMethod='com.lrm.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-29 15:25:47.564  INFO 9536 --- [http-nio-8080-exec-4] com.lrm.aspect.LogAspect                 : Result : tags
+2021-07-29 15:25:47.907  INFO 9536 --- [http-nio-8080-exec-6] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 15:25:47.916  INFO 9536 --- [http-nio-8080-exec-6] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 15:25:48.303  INFO 9536 --- [http-nio-8080-exec-2] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='127.0.0.1', classMethod='com.lrm.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-29 15:25:48.312  INFO 9536 --- [http-nio-8080-exec-2] com.lrm.aspect.LogAspect                 : Result : types
+2021-07-29 15:25:48.663  INFO 9536 --- [http-nio-8080-exec-8] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 15:25:48.669  INFO 9536 --- [http-nio-8080-exec-8] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 15:25:48.833  INFO 9536 --- [http-nio-8080-exec-9] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-07-29 15:25:48.850  INFO 9536 --- [http-nio-8080-exec-9] com.lrm.aspect.LogAspect                 : Result : index
+2021-07-29 15:25:49.224  INFO 9536 --- [http-nio-8080-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 15:25:49.232  INFO 9536 --- [http-nio-8080-exec-10] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 15:25:49.320  INFO 9536 --- [http-nio-8080-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='127.0.0.1', classMethod='com.lrm.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-29 15:25:49.327  INFO 9536 --- [http-nio-8080-exec-1] com.lrm.aspect.LogAspect                 : Result : types
+2021-07-29 15:25:49.750  INFO 9536 --- [http-nio-8080-exec-5] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 15:25:49.755  INFO 9536 --- [http-nio-8080-exec-5] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 15:25:49.942  INFO 9536 --- [http-nio-8080-exec-3] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='127.0.0.1', classMethod='com.lrm.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-29 15:25:49.953  INFO 9536 --- [http-nio-8080-exec-3] com.lrm.aspect.LogAspect                 : Result : tags
+2021-07-29 15:25:50.435  INFO 9536 --- [http-nio-8080-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 15:25:50.440  INFO 9536 --- [http-nio-8080-exec-7] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 15:25:50.751  INFO 9536 --- [http-nio-8080-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='127.0.0.1', classMethod='com.lrm.web.ArchiveShowController.archives', args=[{}]}
+2021-07-29 15:25:50.769  INFO 9536 --- [http-nio-8080-exec-4] com.lrm.aspect.LogAspect                 : Result : archives
+2021-07-29 15:25:51.097  INFO 9536 --- [http-nio-8080-exec-6] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 15:25:51.102  INFO 9536 --- [http-nio-8080-exec-6] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 15:25:51.146  INFO 9536 --- [http-nio-8080-exec-2] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/about', ip='127.0.0.1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-07-29 15:25:51.146  INFO 9536 --- [http-nio-8080-exec-2] com.lrm.aspect.LogAspect                 : Result : about
+2021-07-29 15:25:51.479  INFO 9536 --- [http-nio-8080-exec-9] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 15:25:51.484  INFO 9536 --- [http-nio-8080-exec-9] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 15:25:51.621  INFO 9536 --- [http-nio-8080-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='127.0.0.1', classMethod='com.lrm.web.ArchiveShowController.archives', args=[{}]}
+2021-07-29 15:25:51.634  INFO 9536 --- [http-nio-8080-exec-10] com.lrm.aspect.LogAspect                 : Result : archives
+2021-07-29 15:25:51.943  INFO 9536 --- [http-nio-8080-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 15:25:51.949  INFO 9536 --- [http-nio-8080-exec-1] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 15:25:52.416  INFO 9536 --- [http-nio-8080-exec-5] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='127.0.0.1', classMethod='com.lrm.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-29 15:25:52.425  INFO 9536 --- [http-nio-8080-exec-5] com.lrm.aspect.LogAspect                 : Result : tags
+2021-07-29 15:25:52.834  INFO 9536 --- [http-nio-8080-exec-3] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 15:25:52.840  INFO 9536 --- [http-nio-8080-exec-3] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 15:25:52.935  INFO 9536 --- [http-nio-8080-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='127.0.0.1', classMethod='com.lrm.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-29 15:25:52.940  INFO 9536 --- [http-nio-8080-exec-7] com.lrm.aspect.LogAspect                 : Result : types
+2021-07-29 15:25:53.293  INFO 9536 --- [http-nio-8080-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 15:25:53.297  INFO 9536 --- [http-nio-8080-exec-4] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 15:25:53.453  INFO 9536 --- [http-nio-8080-exec-6] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-07-29 15:25:53.466  INFO 9536 --- [http-nio-8080-exec-6] com.lrm.aspect.LogAspect                 : Result : index
+2021-07-29 15:25:53.916  INFO 9536 --- [http-nio-8080-exec-2] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 15:25:53.920  INFO 9536 --- [http-nio-8080-exec-2] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 15:25:53.988  INFO 9536 --- [http-nio-8080-exec-8] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='127.0.0.1', classMethod='com.lrm.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-29 15:25:53.999  INFO 9536 --- [http-nio-8080-exec-8] com.lrm.aspect.LogAspect                 : Result : types
+2021-07-29 15:25:54.333  INFO 9536 --- [http-nio-8080-exec-9] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 15:25:54.338  INFO 9536 --- [http-nio-8080-exec-9] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 15:25:54.436  INFO 9536 --- [http-nio-8080-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='127.0.0.1', classMethod='com.lrm.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-29 15:25:54.449  INFO 9536 --- [http-nio-8080-exec-10] com.lrm.aspect.LogAspect                 : Result : tags
+2021-07-29 15:25:54.851  INFO 9536 --- [http-nio-8080-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 15:25:54.855  INFO 9536 --- [http-nio-8080-exec-1] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 15:25:54.868  INFO 9536 --- [http-nio-8080-exec-5] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='127.0.0.1', classMethod='com.lrm.web.ArchiveShowController.archives', args=[{}]}
+2021-07-29 15:25:54.883  INFO 9536 --- [http-nio-8080-exec-5] com.lrm.aspect.LogAspect                 : Result : archives
+2021-07-29 15:25:55.181  INFO 9536 --- [http-nio-8080-exec-3] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 15:25:55.186  INFO 9536 --- [http-nio-8080-exec-3] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 15:25:55.224  INFO 9536 --- [http-nio-8080-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/about', ip='127.0.0.1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-07-29 15:25:55.224  INFO 9536 --- [http-nio-8080-exec-7] com.lrm.aspect.LogAspect                 : Result : about
+2021-07-29 15:25:55.538  INFO 9536 --- [http-nio-8080-exec-6] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 15:25:55.543  INFO 9536 --- [http-nio-8080-exec-6] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 15:25:56.014  INFO 9536 --- [http-nio-8080-exec-2] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='127.0.0.1', classMethod='com.lrm.web.ArchiveShowController.archives', args=[{}]}
+2021-07-29 15:25:56.024  INFO 9536 --- [http-nio-8080-exec-2] com.lrm.aspect.LogAspect                 : Result : archives
+2021-07-29 15:25:56.312  INFO 9536 --- [http-nio-8080-exec-8] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 15:25:56.317  INFO 9536 --- [http-nio-8080-exec-8] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 15:25:56.496  INFO 9536 --- [http-nio-8080-exec-9] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='127.0.0.1', classMethod='com.lrm.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-29 15:25:56.503  INFO 9536 --- [http-nio-8080-exec-9] com.lrm.aspect.LogAspect                 : Result : tags
+2021-07-29 15:25:56.917  INFO 9536 --- [http-nio-8080-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 15:25:56.921  INFO 9536 --- [http-nio-8080-exec-10] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 15:25:56.993  INFO 9536 --- [http-nio-8080-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='127.0.0.1', classMethod='com.lrm.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-29 15:25:57.001  INFO 9536 --- [http-nio-8080-exec-1] com.lrm.aspect.LogAspect                 : Result : types
+2021-07-29 15:25:57.332  INFO 9536 --- [http-nio-8080-exec-5] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 15:25:57.336  INFO 9536 --- [http-nio-8080-exec-5] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 15:25:57.671  INFO 9536 --- [http-nio-8080-exec-3] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-07-29 15:25:57.686  INFO 9536 --- [http-nio-8080-exec-3] com.lrm.aspect.LogAspect                 : Result : index
+2021-07-29 15:25:58.152  INFO 9536 --- [http-nio-8080-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 15:25:58.156  INFO 9536 --- [http-nio-8080-exec-7] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 15:26:21.983  INFO 9536 --- [http-nio-8080-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-07-29 15:26:21.997  INFO 9536 --- [http-nio-8080-exec-1] com.lrm.aspect.LogAspect                 : Result : index
+2021-07-29 15:26:22.355  INFO 9536 --- [http-nio-8080-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 15:26:22.360  INFO 9536 --- [http-nio-8080-exec-4] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 21:52:26.187  INFO 9536 --- [http-nio-8080-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-07-29 21:52:26.240  INFO 9536 --- [http-nio-8080-exec-10] com.lrm.aspect.LogAspect                 : Result : index
+2021-07-29 21:52:26.663  INFO 9536 --- [http-nio-8080-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 21:52:26.680  INFO 9536 --- [http-nio-8080-exec-1] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 21:52:28.165  INFO 9536 --- [http-nio-8080-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='127.0.0.1', classMethod='com.lrm.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-29 21:52:28.174  INFO 9536 --- [http-nio-8080-exec-4] com.lrm.aspect.LogAspect                 : Result : types
+2021-07-29 21:52:28.566  INFO 9536 --- [http-nio-8080-exec-2] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 21:52:28.570  INFO 9536 --- [http-nio-8080-exec-2] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 21:52:29.185  INFO 9536 --- [http-nio-8080-exec-6] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='127.0.0.1', classMethod='com.lrm.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-29 21:52:29.198  INFO 9536 --- [http-nio-8080-exec-6] com.lrm.aspect.LogAspect                 : Result : tags
+2021-07-29 21:52:29.521  INFO 9536 --- [http-nio-8080-exec-8] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 21:52:29.528  INFO 9536 --- [http-nio-8080-exec-8] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 21:52:29.680  INFO 9536 --- [http-nio-8080-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='127.0.0.1', classMethod='com.lrm.web.ArchiveShowController.archives', args=[{}]}
+2021-07-29 21:52:29.693  INFO 9536 --- [http-nio-8080-exec-7] com.lrm.aspect.LogAspect                 : Result : archives
+2021-07-29 21:52:29.980  INFO 9536 --- [http-nio-8080-exec-9] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 21:52:29.984  INFO 9536 --- [http-nio-8080-exec-9] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 21:52:30.130  INFO 9536 --- [http-nio-8080-exec-5] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/about', ip='127.0.0.1', classMethod='com.lrm.web.AboutShowController.about', args=[]}
+2021-07-29 21:52:30.131  INFO 9536 --- [http-nio-8080-exec-5] com.lrm.aspect.LogAspect                 : Result : about
+2021-07-29 21:52:30.478  INFO 9536 --- [http-nio-8080-exec-10] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 21:52:30.525  INFO 9536 --- [http-nio-8080-exec-10] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 21:52:30.721  INFO 9536 --- [http-nio-8080-exec-1] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/archives', ip='127.0.0.1', classMethod='com.lrm.web.ArchiveShowController.archives', args=[{}]}
+2021-07-29 21:52:30.735  INFO 9536 --- [http-nio-8080-exec-1] com.lrm.aspect.LogAspect                 : Result : archives
+2021-07-29 21:52:31.015  INFO 9536 --- [http-nio-8080-exec-4] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 21:52:31.019  INFO 9536 --- [http-nio-8080-exec-4] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 21:52:31.582  INFO 9536 --- [http-nio-8080-exec-2] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/tags/-1', ip='127.0.0.1', classMethod='com.lrm.web.TagShowController.tags', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-29 21:52:31.590  INFO 9536 --- [http-nio-8080-exec-2] com.lrm.aspect.LogAspect                 : Result : tags
+2021-07-29 21:52:31.868  INFO 9536 --- [http-nio-8080-exec-6] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 21:52:31.872  INFO 9536 --- [http-nio-8080-exec-6] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 21:52:32.237  INFO 9536 --- [http-nio-8080-exec-8] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/types/-1', ip='127.0.0.1', classMethod='com.lrm.web.TypeShowController.types', args=[Page request [number: 0, size 8, sort: updateTime: DESC], -1, {}]}
+2021-07-29 21:52:32.246  INFO 9536 --- [http-nio-8080-exec-8] com.lrm.aspect.LogAspect                 : Result : types
+2021-07-29 21:52:32.578  INFO 9536 --- [http-nio-8080-exec-7] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 21:52:32.583  INFO 9536 --- [http-nio-8080-exec-7] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
+2021-07-29 21:52:32.674  INFO 9536 --- [http-nio-8080-exec-9] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.index', args=[Page request [number: 0, size 8, sort: updateTime: DESC], {}]}
+2021-07-29 21:52:32.686  INFO 9536 --- [http-nio-8080-exec-9] com.lrm.aspect.LogAspect                 : Result : index
+2021-07-29 21:52:33.017  INFO 9536 --- [http-nio-8080-exec-5] com.lrm.aspect.LogAspect                 : Request : {url='http://localhost:8080/footer/newblog', ip='127.0.0.1', classMethod='com.lrm.web.IndexController.newblogs', args=[{}]}
+2021-07-29 21:52:33.022  INFO 9536 --- [http-nio-8080-exec-5] com.lrm.aspect.LogAspect                 : Result : _fragments :: newblogList
